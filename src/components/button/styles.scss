@@ -1,0 +1,28 @@
+
+.button > button{
+    margin: 30px 0;
+    width: 300px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 34px;
+
+    padding: 10px;
+    height: 70px;
+    color: #232233;
+    cursor: pointer;
+    border: 2px solid #232233;
+    outline: none;
+    background: none;
+    border-radius: 10px;
+    
+    &:hover {
+        background: #8321E7;
+        color: #FFF;
+        border: 5px solid #a656f7;
+    }
+}

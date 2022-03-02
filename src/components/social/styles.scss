@@ -1,0 +1,32 @@
+.social {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    margin: 10px 0;
+
+    .divider {
+        width: 2px;
+        background: #6C6C72;
+    }
+
+    .icon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0 30px;
+
+        svg {
+            path {
+                fill: #232323;
+
+                &:hover {
+                    transition-property: color;
+                    transition-duration: 0.2s;
+                    transition-timing-function: ease-out;
+                    fill: #8321E7;
+                }
+            }
+        }
+    }
+}
