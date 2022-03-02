@@ -1,0 +1,36 @@
+.message{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: none;
+    margin: 8px 0;
+    margin-bottom: 50px;
+    padding: 10px 0;
+    width: 100%;
+    transition: all 0.2s;
+    border-bottom: 2px solid;
+    height: 50px;
+    border-color: #8d8a8a;
+    overflow: hidden;
+
+    textarea {
+        resize: none;
+        margin-left: 5px;
+        padding: 15px 8px;
+        padding-bottom: 0;
+        overflow: hidden;
+        outline: none;
+        box-sizing: border-box;
+        font-size: 14px;
+        font-family: 'Poppins';
+        width: 100%;
+        background: none;
+        border: none;
+        transition: border 0.2s ease 0s;
+        color: #0c0c0c;
+    }
+
+    &:hover {
+        border-bottom: 2px solid #8321E7;
+    }
+}

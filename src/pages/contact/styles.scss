@@ -1,0 +1,45 @@
+
+
+.contact {
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+    width: 100vw;
+    height: 100vh;
+
+    background: #FFF;
+
+    .form {
+        display: flex;
+        flex-direction: column;
+        width: 300px;
+
+        .header {
+            width: 100%;
+            background: transparent;
+            padding: 10px 0;
+            margin-bottom: 40px;
+
+            .backIcon {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+
+                border: 2px solid #8d8a8a;
+                border-radius: 10px;
+                width: 40px;
+                height: 40px;
+
+                cursor: pointer;
+
+                &:hover {
+                    filter: brightness(0.7);
+                }
+            }
+        }
+    }
+}

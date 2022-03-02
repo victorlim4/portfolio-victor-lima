@@ -32,8 +32,10 @@ export const Home = () => {
                     linkedin="https://www.linkedin.com/in/victor-lima-68b67420a/"
                 />
 
-                <Button 
+                <Button
+                    linkTo='/contact'
                     text="Contratar"
+                    styled="normal"
                     onHandleSubmit={() => alert("contratar")}
                 />
             </div>

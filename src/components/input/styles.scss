@@ -1,0 +1,29 @@
+
+.inputContainer {
+    display: flex;
+    align-items: center;
+    background: none;
+    margin: 8px 0;
+    width: 100%;
+    padding: 10px 0;
+    transition: all 0.2s;
+    border-bottom: 2px solid;
+    height: 50px;
+    border-color: #8d8a8a;
+
+    .input {
+        margin-left: 5px; 
+        font-size: 14px;
+        width: 100%;
+        padding: 15px 8px;
+        outline: 0px;
+        background: none;
+        border: 0;
+        transition: border 0.2s ease 0s;
+        color: #0c0c0c;
+    }
+
+    &:hover {
+        border-bottom: 2px solid #8321E7;
+    }
+}

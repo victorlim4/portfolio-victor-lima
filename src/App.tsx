@@ -1,12 +1,16 @@
+import {Route, Routes} from 'react-router-dom'
+
 import { Home } from './pages/home';
+import { Contact } from './pages/contact';
 
 import './styles/global.scss'
 
 function App() {
   return (
-    <div className="App">
-      <Home />
-    </div>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/contact" element={<Contact />} />
+      </Routes>
   )
 }
 
