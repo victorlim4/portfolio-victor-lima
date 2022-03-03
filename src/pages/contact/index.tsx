@@ -19,14 +19,13 @@ export const Contact = () => {
         <div className="contact">
             <div className="form">
                 <div className="header">
-                    <div className="backIcon">
-                        <FiChevronLeft 
-                            onClick={() => navigate(-1)}
+                    <div className="backIcon" onClick={() => navigate(-1)}>
+                        <FiChevronLeft
                             color="#8d8a8a"
                         />
                     </div>
                 </div>
-                <Input 
+                <Input
                     onChange={setName}
                     placeholder="Seu Nome"
                     value={name}

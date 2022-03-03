@@ -1,13 +1,32 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './styles.scss';
 
 import { ProfilePic } from '../../components/profilePic';
 import { Social } from '../../components/social';
 import { Button } from '../../components/button';
+import { Card } from '../../components/card';
 
 export const Home = () => {
 
-    const organizationUrl: string = 'https://github.com/callisto4gency'
+    const organizationUrl: string = 'https://github.com/callisto4gency';
+
+    const [works, setWorks] = useState([
+        {
+            id: 1,
+            image: 'https://picsum.photos/200',
+            url: '/'
+        },
+        {
+            id: 2,
+            image: 'https://picsum.photos/200',
+            url: '/'
+        },
+        {
+            id: 3,
+            image: 'https://picsum.photos/200',
+            url: '/',
+        }
+    ]);
 
     return (
         <div className="container">
@@ -33,11 +52,31 @@ export const Home = () => {
                 />
 
                 <Button
-                    linkTo='/contact'
+                    linkTo="/contact"
                     text="Contratar"
                     styled="normal"
                     onHandleSubmit={() => alert("contratar")}
                 />
+            </div>
+
+            <div className="works">
+                <div className="worksHeader">
+                    <h1>Projetos</h1>
+                </div>
+
+                <div className="worksContainer">
+                    <div className="grid">
+                    {
+                        works.map(work => (
+                            <Card
+                                key={work.id}
+                                image={work.image}
+                                url={work.url}
+                            />
+                        ))
+                    }
+                    </div>
+                </div>
             </div>
         </div>
     );
