@@ -2,10 +2,10 @@ import { useState } from 'react';
 import { Input } from '../../components/input';
 import './styles.scss';
 
-import { FiChevronLeft } from 'react-icons/fi';
 import { Button } from '../../components/button';
-import { useNavigate } from 'react-router-dom';
 import { Message } from '../../components/message';
+
+import { GoBack } from '../../components/goBack';
 
 export const Contact = () => {
 
@@ -13,18 +13,10 @@ export const Contact = () => {
     const [email, setEmail] = useState<string>('');
     const [message, setMessage] = useState<string>('');
 
-    const navigate = useNavigate();
-
     return (
         <div className="contact">
             <div className="form">
-                <div className="header">
-                    <div className="backIcon" onClick={() => navigate(-1)}>
-                        <FiChevronLeft
-                            color="#8d8a8a"
-                        />
-                    </div>
-                </div>
+                <GoBack />
                 <Input
                     onChange={setName}
                     placeholder="Seu Nome"
@@ -32,7 +24,7 @@ export const Contact = () => {
                 />
                 <Input
                     onChange={setEmail}
-                    placeholder="Seu Email"
+                    placeholder="Seu whatsapp ou email"
                     value={email}
                 />
                 <Message 

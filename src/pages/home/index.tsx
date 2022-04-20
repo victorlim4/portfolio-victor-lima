@@ -69,9 +69,10 @@ export const Home = () => {
                     {
                         works.map(work => (
                             <Card
-                                key={work.id}
-                                image={work.image}
-                                url={work.url}
+                            key={work.id}
+                            id={work.id.toString()}
+                            image={work.image}
+                            url={work.url}
                             />
                         ))
                     }

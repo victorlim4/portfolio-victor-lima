@@ -1,0 +1,56 @@
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    //justify-content: center;
+    align-items: center;
+
+    width: 100vw;
+    height: 100vh;
+
+    background: #FFF;
+    overflow-x: hidden;
+
+    @media only screen and (min-width: 320px) {
+        padding: 20px 0;
+    }
+
+    .content {
+        width: 80%;
+        user-select: none;
+
+        .infos {
+            display: flex;
+            flex-direction: column;
+
+            #heading {
+                font-size: 36px;
+                font-weight: 600;
+                color: #1d1d1d;
+
+                @media only screen and (min-width: 320px) {
+                    font-size: 20px;
+                }
+            }
+
+            #image {
+                width: 100%;
+                border-radius: 10px;
+                margin-bottom: 10px;
+                height: 300px;
+            }
+
+            #description {
+                font-size: 32px;
+                font-weight: 500;
+                color: #363636;
+
+                @media only screen and (min-width: 320px) {
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+}
